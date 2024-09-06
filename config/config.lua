@@ -6,7 +6,7 @@ SDC = {}
 SDC.Framework = "qb-core" --Either "qb-core" or "esx"
 SDC.Target = "qb-target" --Either "qb-target" or "ox-target"
 SDC.NotificationSystem = "framework" -- ['mythic_old', 'mythic_new', 'tnotify', 'okoknotify', 'print', 'framework', 'none'] --Notification system you prefer to use
-SDC.Fuel = "none" --Put your fuel script here, options: ['none', 'LegacyFuel'] (If you have others it should be fine to just put the resource name)
+SDC.Fuel = "cdn-fuel" --Put your fuel script here, options: ['none', 'LegacyFuel'] (If you have others it should be fine to just put the resource name)
 
 SDC.Identifier = "license" --Can be one of the following: ["license", "steam", "discord", "fivem"] (Used For Syncing Ownership Of Scooters)
 
@@ -26,9 +26,9 @@ SDC.MaxRentTime = { --How long someone can rent for (Suggest keeping it default 
 }
 SDC.HighlightedColor = {r = 239, g = 245, b = 66, a = 200} --The color used when highlighting the scooter when in menu!
 
-SDC.DrawScooterIcon = {Enabled = true, DistanceToSee = 10} --If you want it to draw the 3D Icon on top of the scooters!
+SDC.DrawScooterIcon = {Enabled = false, DistanceToSee = 10} --If you want it to draw the 3D Icon on top of the scooters!
 
-SDC.DrawScooterBlips = {Enabled = false, Sprite = 494, Color = 5, Size = 0.5} --If you want to draw blips for all available scooters!
+SDC.DrawScooterBlips = {Enabled = true, Sprite = 494, Color = 5, Size = 0.5} --If you want to draw blips for all available scooters!
 SDC.ShowOnlyNearbyScooterBlips = true --This will only show nearby scooter blips instead of all scooter blips
 SDC.ShowOnlyNearbyScooterBlipsDistance = 100 --This is the distance you have to be from the scooter for it to show the blip
 
